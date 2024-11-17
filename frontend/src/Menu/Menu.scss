@@ -1,0 +1,28 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "../colour-variables.scss";
+
+.menu {
+  background-color: $whale-light-blue;
+  color: $whale-main-blue;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-open {
+  transform: translateX(0vw);
+  transition: all ease-in-out 0.8s;
+}
+
+.menu-hidden {
+  transform: translateX(50vw);
+  background-color: $whale-main-blue;
+  transition: all ease-in-out 0.8s;
+}

@@ -1,0 +1,41 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "../../colour-variables.scss";
+
+.popup {
+  top: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 40%;
+  max-width: 60%;
+  background-color: $whale-main-blue;
+  padding: 3rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#deletebutton-yes {
+  color: black;
+  background-color: #ff7575;
+}
+
+#deletebutton-no {
+  color: black;
+  background-color: #a9ff75;
+}

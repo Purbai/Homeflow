@@ -1,0 +1,77 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "./../../colour-variables.scss";
+
+.background-container {
+  background-image: url("https://th.bing.com/th/id/OIP.fR589K4xyu4qj8gjhnhDJQHaFj?w=247&h=185&c=7&r=0&o=5&pid=1.7");
+  
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.top-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+  padding-bottom: 9vh;
+}
+
+.btn-primary {
+  background-color: $whale-logo-yellow;
+  color: $whale-main-blue;
+  border: $whale-logo-yellow;
+}
+
+.btn-primary:hover {
+  background-color: $whale-light-blue;
+  color: $whale-main-blue;
+  border: $whale-light-blue;
+}
+
+.custom-button {
+  font-size: 3vh;
+  width: 30vw;
+  height: 8vh;
+  margin: 10px;
+}
+
+.logo {
+  display: none;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  background-color: $whale-light-blue;
+  color: $whale-main-blue;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .background-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .logo {
+    display: block;
+    grid-area: 1 / 1 / 2 / 3;
+    padding-left: 5vw;
+    padding-top: 1vh;
+  }
+
+  .top-buttons {
+    grid-area: 5 / 2 / 6 / 5;
+    gap: 5vw;
+    justify-self: center;
+    align-self: end;
+  }
+}
