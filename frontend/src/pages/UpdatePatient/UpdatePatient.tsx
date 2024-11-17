@@ -170,7 +170,7 @@ export function UpdatePatient(): JSX.Element {
           </div>
           <div className="form-group row justify-content-center pb-4">
             <label htmlFor="expectedDurationDays" className="col-lg-3 col-sm-2 col-form-label">
-            Postcode:
+            Expected duration days:
             </label>
             <div className="col-lg-7 col-sm-3">
               <input
